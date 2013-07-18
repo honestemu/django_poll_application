@@ -33,4 +33,4 @@ def vote(request, poll_id):
     #Always Return an HttpResponseRedirect after successfully dealing with
     #POST data. This prevents data from being posted twice if the user hits
     #the back button.
-    return HttpResponseRedirect(reverse('polls.views.results', args=(p.id,)))
+    return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
